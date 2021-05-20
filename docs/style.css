@@ -51,7 +51,7 @@ ul{
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
-    background-image: url("../logos and images/poster.jpg");
+    background-image: url("https://www.helpguide.org/wp-content/uploads/table-with-grains-vegetables-fruit-768.jpg");
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ color: #b96868;
 }
 /*----------------- setting background for page---------------- */
 body{
-    background-image: url("../logos and images/bg.jpg");
+    background-image: url("https://i.pinimg.com/originals/9b/56/f5/9b56f50e5f4a28da700b0c991d96b5c7.png");
     background-size: cover;
 }
 /*------------------ setting popular items organised------------- */
