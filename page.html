@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mypage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contH">
+        <nav>
+            <div id="burger" class="burger">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h2>Title</h2>
+            <ul>
+                <li><a href="./page.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./sign.html">sign/Log-in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mob">
+        <ul>
+            <li><a href="./page.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./sign.html">sign/Log-in</a></li>
+        </ul>
+    </div>
+    <div>
+        <div id="img">
+            <div class="card">
+                <img src="https://www.surveycto.com/wp-content/uploads/2018/04/SurveyCTO-Logo-CMYK.png" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam Lorem ipsum dolor sit amet.
+                </p>
+                    <a href="/">Do this</a>
+            </div>
+        </div>
+    </div>
+    <div id="scrollcont">
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+            <div class="famecard">
+                <div class="imgs"></div>
+                <div class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, provident iste? Obcaecati repudiandae repellendus fugit.</div>
+            </div>
+    </div>
+    <div id="text-cont">
+        <div>
+            <h2>What About This Page ?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolorem ratione amet consequuntur accusamus, ab ipsam. Nobis voluptatum quia odit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi autem praesentium fuga vero molestiae commodi corrupti similique debitis natus saepe.</p></div>
+        <div>
+            <h2>Is This Good ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem ratione itaque consequatur unde delectus eligendi ullam sint magnam cupiditate.</p></div>
+        <div>
+            <h2>I Know Its Cool</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae rem nobis. Corrupti quisquam mollitia odio pariatur laboriosam iusto? Illo?</p></div>
+    </div>
+    <footer>
+        <ul>
+            
+            <li><a href="/">Terms & Conditions</a></li>
+            <li><a href="/">Contents</a></li>
+            <li><a href="/">Magisines</a></li>
+            <li><a href="/">Styling</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Mark Ups</a></li>
+            <li><a href="/">Support Us</a></li>
+            <li><a href="/">Tutorials</a></li>
+            <li><a href="/">This is my page</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Ipsum</a></li>
+            <li><a href="/">Coin Us</a></li>
+            <li><a href="/">Bits</a></li>
+            <li><a href="/">selerus</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Wolders</a></li>
+            <li><a href="/">Illuminati</a></li>
+            <li><a href="/">Furious</a></li>
+            <li><a href="/">Lasts Long</a></li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const burger = document.getElementById("burger");
+let check = true;
+const mob = document.getElementById("mob");
+burger.addEventListener("click", ()=>{
+    if (check){
+        burger.classList.add("clicked");
+        mob.style.display = "flex";
+        check = false;
+    }
+    else{
+        burger.classList.remove("clicked");
+        mob.style.display = "none";
+        check = true;
+    }
+});
+
+const navbar = document.getElementById("contH");
+let Knownpos = 0;
+document.addEventListener("scroll", ()=>{
+    if (Knownpos > window.scrollY) {
+        navbar.style.display = "block";
+    }
+    else{
+        navbar.style.display = "none";
+    }
+    Knownpos = window.scrollY;
+})
+</script>
+</html>

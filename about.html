@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contH">
+        <nav>
+            <div id="burger" class="burger">
+                <div class="rod"></div>
+                <div class="rod"></div>
+                <div class="rod"></div>
+            </div>
+            <h2>Title</h2>
+            <ul>
+                <li><a href="./page.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./sign.html">sign/Log-in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mob">
+        <ul>
+            <li><a href="./page.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./sign.html">sign/Log-in</a></li>
+        </ul>
+    </div>
+
+    <div id="snv">
+            <div class="about">
+                <h2>Styling</h2>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem ex ratione culpa <p style="color: blue;display: inline;">quisquam saepe reiciendis veritatis </p>maiores alias. Dicta exercitationem 
+                <p style="color: blue;display: inline;">ratione voluptatibus, laudantium similique </p>doloremque accusantium perferendis error ex.</p></div>
+            </div>
+            <div class="about">
+                <h2>lorem</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ipsam <p style="color: red;display: inline;">ex voluptatibus pariatur, quam quaerat odit qui reprehenderit, enim ducimus eius consectetur non distinctio cupiditate</p> sunt, quia dolorum quidem nihil. Lorem ipsum dolor<p style="color: blue;display: inline;"> sit, amet consectetur adipisicing elit. Distinctio iste modi possimus eum asperiores consequuntur dolor consequatur rerum.</p> Doloremque, accusantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi deserunt natus quis quo quia voluptas dolor adipisci dignissimos, nulla culpa dolores at quod expedita illum qui alias nobis. Dolores, temporibus.
+                </p>
+    <h2>Ipsum</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero magnam officiis quas debitis accusamus <p style="color: green;display: inline;">natus minus possimus tempora eos quisquam distinctio facere ea iusto quidem optio animi pariatur nisi, quia magni est molestiae dolorum. Ullam, magni</p> expedita, est maiores, illo esse nihil aperiam quos commodi nostrum excepturi reiciendis id blanditiis.
+    </p>
+        <h2>Thamk you for support</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque iste soluta consequuntur a ullam minima! Deserunt nulla praesentium cum!
+    </p>
+</div>
+    </div>
+    <div class="about" id="lnav">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, aspernatur. Laboriosam quidem fugit eum ea quaerat quia quas optio rem ducimus quasi. Sunt molestiae nulla ad, voluptatum enim blanditiis, iure reiciendis deleniti, natus consequatur nostrum. Aliquam obcaecati sint molestiae eum est ab minus, optio voluptatibus corrupti velit magni sed nam!
+        </p>
+    </div>
+    <footer>
+        <ul>
+            
+            <li><a href="/">Terms & Conditions</a></li>
+            <li><a href="/">Contents</a></li>
+            <li><a href="/">Magisines</a></li>
+            <li><a href="/">Styling</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Mark Ups</a></li>
+            <li><a href="/">Support Us</a></li>
+            <li><a href="/">Tutorials</a></li>
+            <li><a href="/">This is my page</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Ipsum</a></li>
+            <li><a href="/">Coin Us</a></li>
+            <li><a href="/">Bits</a></li>
+            <li><a href="/">selerus</a></li>
+        </ul>
+        <ul>
+            <li><a href="/">Wolders</a></li>
+            <li><a href="/">Illuminati</a></li>
+            <li><a href="/">Furious</a></li>
+            <li><a href="/">Lasts Long</a></li>
+        </ul>
+    </footer>    
+</body>
+<script>
+    const burger = document.getElementById("burger");
+let check = true;
+const mob = document.getElementById("mob");
+burger.addEventListener("click", ()=>{
+    if (check){
+        burger.classList.add("clicked");
+        mob.style.display = "flex";
+        check = false;
+    }
+    else{
+        burger.classList.remove("clicked");
+        mob.style.display = "none";
+        check = true;
+    }
+});
+
+const navbar = document.getElementById("contH");
+let Knownpos = 0;
+document.addEventListener("scroll", ()=>{
+    if (Knownpos > window.scrollY) {
+        navbar.style.display = "block";
+    }
+    else{
+        navbar.style.display = "none";
+    }
+    Knownpos = window.scrollY;
+})
+</script>
+</html>
